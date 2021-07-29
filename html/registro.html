@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+    <html lang="es" dir="ltr" >
+        <head>
+         <meta charset="uft-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=7">
+         <meta name="viewport" content="width=device-width, user=scalable=no ,initial-scale=1.8, maxinum-scale=1.8, mininum-scale=1.0">
+         <link rel="stylesheet" href="../css/estilos.css">
+         <link rel = "preconnect" href = "https://fonts.gstatic.com">
+         <link href = "https://fonts.googleapis.com/css2? family = Roboto & display = swap" rel = "hoja de estilo ">
+         <a href="https://icons8.com/icon/123435/application-window"></a>
+
+         <title>
+               Menu 
+         </title>
+
+        </head>
+<body>
+          <!--menu-->  
+         <header>
+
+          <div class="header-cont">
+
+            <div class="logo">
+            <h1>Sevi<b>Col</b></h1>
+            </div>
+           <div class="menu" id="show-menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html"><img src="https://img.icons8.com/dotty/24/000000/home-page.png"/>Inicio</a></li>
+                    <br>
+                    <li><div class="menu-selectd"><a href="../php/inicios.php" class="text-menu-selectd"><img src="https://img.icons8.com/wired/24/000000/bookmark.png"/>Plataforma</a></div></li>
+                    <li><a href="MENU DE AYUDA.HTML"><img src="https://img.icons8.com/dotty/24/000000/search.png"/>Saber Mas</a></li>
+                    <li><a href="contactanos.html"><img src="https://img.icons8.com/dotty/24/000000/add-contact-to-company.png"/>Contactenos</a></li>
+                    <li><a href="otros.html"><img src="https://img.icons8.com/dotty/24/000000/add.png"/>Otros</a></li>
+
+                </ul>
+            </nav>
+           </div>
+        </header>
+<div class="espacio"></div>
+        <main>
+            <form action="../php/registro usuario.php " class="formulario" id="formulario" method="POST">
+               <!--grupo:nombre-->
+             <div class="formulario__grupo " id="grupo__nombre">
+                <label class="formulario__grupo" id="formulario__label">NOMBRE</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="whitney stepany" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener letras entra las cuales pueden ser mayuscula o minuscula.</p>
+    
+             </div>  
+                 <!--grupo:usuario-->
+                 <div class="formulario__grupo " id="grupo__usuario">
+                    <label class="formulario__grupo" id="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="JOSESANTANA23" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo.</p>
+            
+                 </div>        
+<!--grupo:correo-->
+<div class="formulario__grupo " id="grupo__correo">
+    <label class="formulario__grupo" id="formulario__label">Correo Electronico</label>
+<div class="formulario__grupo-input">
+    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@dominio.com" required>
+    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos y guion bajo.</p>
+
+</div>
+
+     <!--grupo:password-->
+     <div class="formulario__grupo " id="grupo__password">
+        <label class="formulario__grupo" id="formulario__label">Contrase&ntilde;a</label>
+    <div class="formulario__grupo-input">
+        <input type="password" class="formulario__input" name="password" id="password" placeholder="*******" required>
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario__input-error">la contrase&ntilde;a tiene que ser de 4 a 12 digitos.</p>
+
+</div>
+ <!--grupo:password2-->
+ <!--<div class="formulario__grupo " id="grupo__password2">
+    <label class="formulario__grupo" id="formulario__label">Nº Identificacion</label>
+<div class="formulario__grupo-input">
+    <input type="password" class="formulario__input" name="tarjeta" id="password2" placeholder="1104698547" required>
+    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">ambas contrase&ntilde;as tienes que ser iguales.</p>
+
+</div>-->
+
+ 
+ <!--grupo:telefono-->
+ <!--<div class="formulario__grupo " id="grupo__telefono">
+    <label class="formulario__grupo" id="formulario__label">Telefono </label>
+<div class="formulario__grupo-input">
+    <input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="4568422525" required>
+    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo de 14 digitos.</p>
+
+</div>-->
+
+<!--GRUPO PARA TERMINOS Y CONDICONES-->
+<div class="formulario__grupo " id="grupo__terminos">
+    <label class="formulario__label">
+        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" required>
+        Acepto los Terminos y Condiciones
+    </label>
+</div>
+
+<!--boton de enviar-->
+<div class="formulario__mensaje " id="formulario__mensaje">
+<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>Por favor rellene el formulario correctamente</p>
+</div>
+<div class="formulario__grupo formulario__grupo-btn enviar">
+    <a href="html/exito3.html"><button type="submit" class="formulario__btn" name="btn-registrar">Registarse</button></a>
+    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+</div>
+        </form>
+        </main>
+
+        <!--<script src="js/formulario.js"></script>-->
+   
+      <div class="container">
+
+            <a href="../php/inicios.php" class="icon-in" ><img src="https://img.icons8.com/windows/30/000000/import.png" alt=""></a>
+     </div>
+     <div class="container-footer-all">
+        
+        <div class="container-body">
+
+            <div class="colum1">
+                <h1>Mas informacion de la compa&ntilde;ia</h1>
+
+                <p>Esta compa&ntilde;ia tiene como fin brindar una seguridad optima a los lugares donde se le es contradado y ademas nos 
+                    esforzamos para motivarlos a dar un mejor esfuerzo y dejar en alto nuestra compa&ntilde;ia.</p>
+
+            </div>
+
+            <div class="colum2">
+
+                <h1>Redes Sociales</h1>
+
+                <div class="row">
+                    <a href="https://www.facebook.com/SevicolLtdaOficial"><img src="../icon/facebook.png">
+                    <label>Siguenos en Facebook</label></a>
+                </div>
+                <div class="row">
+                   <a href="https://twitter.com/Sevicol_Ltda">
+                    <img src="../icon/twitter.png">
+                    <label>Siguenos en Twitter</label>
+                </a>
+                </div>
+                <div class="row">
+                    <a href="https://www.instagram.com/sevicol_ltda/">
+                        <img src="../icon/instagram.png">
+                        <label>Siguenos en Instagram</label>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="https://www.youtube.com/channel/UCzIPJNBrzUJgA6loaqQ3Imw/videos">
+                        <img src="../icon/icons8-youtube-play-button-36.png">
+                    <label>Siguenos en Youtube</label></a>
+                </div>
+                <div class="row">
+                  <a href="https://co.pinterest.com/Sevicol/">  
+                    <img src="../icon/pinterest.png">
+                    <label>Siguenos en Pinteres</label></a>
+                </div>
+
+
+            </div>
+
+            <div class="colum3">
+
+                <h1>Informacion Contactos</h1>
+
+                <div class="row2">
+                    <img src="../icon/house.png" >
+                    <label>Km. 4 N° 40 - 40 Vía Girón - Bucaramanga 68001000 Bucaramanga, Santander, Colombia</label>
+                </div>
+
+                <div class="row2">
+                    <img src="../icon/smartphone.png">
+                    <label>(7) 6457003</label>
+                </div>
+
+                <div class="row2">
+                    <img src="../icon/contact.png">
+                     <label>comunicacionescorporativas
+                         @sevicol.com.co</label>
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+    
+    <div class="container-footer">
+           <div class="footer">
+                <div class="copyright">
+                    © 2021 Todos los Derechos Reservados | <a href="https://ftzonapro.000webhostapp.com/index.html">XD</a>
+                </div>
+
+                <div class="information">
+                    <a href="#">Informacion Compa&ntilde;ia</a> | <a href="#">Privacion y Politica</a> | <a href="#">Terminos y Condiciones</a>
+                </div>
+            </div>
+
+        </div>
+    
+</footer>
+     
+    </body>
+
+</html>

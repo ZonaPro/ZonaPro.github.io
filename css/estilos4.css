@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:  'Roboto', sans-serif;
+    background:rgb(0, 96, 135) ;
+    background-size:cover;
+    width: 100vh;
+    height: 200px;
+}
+header{
+    position: fixed;
+    background:#22242a ;
+    padding:20px;
+    width: 100%;
+    height:30px;
+}
+.left_area.a{
+    text-decoration: none;
+    
+}
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform:uppercase ;
+    font-size: 22px;
+    font-weight: 900;
+}
+.left_area span{
+    color:#6745FF;  
+}
+.logout_btn{
+    padding:5px;
+    background: #00A9FF;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 5%;
+    font-size: 15px;
+    font-weight:600;
+    color:#fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+.logout_btn:hover{
+    background:#006DA4;
+}
+.sidebar{
+    background:#2D2D2D;
+    margin-top:70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height:100%;
+    transition:0.5s;
+    transition-property:left;
+}
+.sidebar .profile_image{
+    width: 100px;
+    height:100px;
+    border-radius: 100px;
+    margin-bottom:10px;
+}
+.sidebar h4{
+    color:#ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sidebar a{
+    color:#fff;
+    display:block ;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition:0.5s ;
+    transition-property:background ;
+}
+.sidebar a:hover{
+    background:#48E2FF;
+}
+.sidebar img{
+    padding-right: 10px;
+}
+label #sidebar_btn{
+    z-index:1;
+    color:#fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 5px;
+    margin: 5px 0;
+    transition:0.5s;
+    transition-property: color;
+}
+label #sidebar_btn:hover{
+    color:#48E2FF;
+
+}
+#check:checked ~ .sidebar{
+    left:-190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+#check{
+    display: none;
+}    
+
+.contenidos{
+    
+    width: 2500px;
+    max-width: 1350px;
+    height: 65VH;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    margin: auto;
+    
+}
+.contenidos .card{
+    width:330px;
+    height: 350px;
+    border-radius: 8px  ;
+    border: black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+    margin: 20px;
+    text-align: center;
+    transform: all 0.25s;
+    
+      
+}
+.contenidos .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0, 0, 0.2);
+
+}
+.contenidos .card1{
+    width:500px;
+    height: 500px;
+    border-radius: 8px  ;
+    border: black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+    margin: 20px;
+    text-align: center;
+    transform: all 0.25s;
+}
+.contenidos .card1:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0, 0, 0.2);
+
+}
+
+.contenidos .card img{
+    width: 330px;
+    height: 220px;
+}
+.contenidos .card h4{
+    font-weight: 600;
+}
+.contenidos .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+.contenidos .card button{
+    width: 100px;
+    height:50px;
+    border-radius: 50%;
+    background: #401fff;
+    box-shadow:rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+.contenidos .card button:hover{
+    background:#39038f;
+    color:black;
+}
+
+.contenidos .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+	background: black;
+
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+	color:white;
+}
+
+.colum1 h1{
+    font-size: 22px;
+	color: white;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+.row a{
+	text-decoration: none;
+	display: flex;
+	transition:all 5s;
+}
+.row a:hover{
+	color:#1c56e9;
+}
+
+
+.colum3{
+    max-width: 400px;
+	color:white;
+}
+
+.colum3 h1{
+    font-size: 22px;
+	color: white;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+	
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+	color:black;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+	color: white;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+    .colum1{
+        max-width: 100%;
+    }
+
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
